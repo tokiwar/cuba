@@ -2,21 +2,14 @@ import React from "react";
 import "./styles.css";
 import logo from "./logo.png";
 import Button from "../button/Button";
+import HeaderMenu from "../header-menu/HeaderMenu";
 
 const Header = () => {
     return (
         <div className={'header'}>
             <div className={'head-line'}>
                 <img className={'head-logo'} src={logo}/>
-                <nav className={'head-menu'}>
-                    <ul className={'head-menu-ul'}>
-                        <li className={'head-menu-li'}><a href={'#'}>HOME</a></li>
-                        <li className={'head-menu-li'}><a href={'#'}>ABOUT</a></li>
-                        <li className={'head-menu-li'}><a href={'#'}>WORK</a></li>
-                        <li className={'head-menu-li'}><a href={'#'}>BLOG</a></li>
-                        <li className={'head-menu-li'}><a href={'#'}>CONTACT</a></li>
-                    </ul>
-                </nav>
+                <HeaderMenu/>
             </div>
             <div className={'head-body'}>
                 <div className={'head-body-text'}>

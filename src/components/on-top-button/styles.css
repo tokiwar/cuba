@@ -1,0 +1,35 @@
+.on-top-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 10;
+    height: 75px;
+    width: 75px;
+    border-radius: 5px;
+    background: white;
+    border: none;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.on-top-button img{
+    height: 35px;
+    width: 35px;
+    transform: rotate(-90deg);
+    opacity: 0.55;
+}
+
+.on-top-button:focus,
+.on-top-button:active {
+    outline: none;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}

@@ -3,7 +3,8 @@ import axios from "axios";
 import {useEffect, useState} from "react";
 import Section from "./components/section/Section";
 import Footer from "./components/footer/Footer";
-import CustomLoader from "./components/customLoader/CustomLoader";
+import CustomLoader from "./components/custom-loader/CustomLoader";
+import OnTopButton from "./components/on-top-button/OnTopButton";
 
 function App() {
     const [sections, setSections] = useState([]);
@@ -26,6 +27,7 @@ function App() {
                     return <Section key={value.id} {...value}/>
                 })}
                 <Footer/>
+                <OnTopButton/>
             </>
         );
     } else {

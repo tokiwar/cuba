@@ -7,7 +7,7 @@ import Feedback from "../feedback/Feedback";
 
 const Section = (props) => {
     return (
-        <section className={props.className}>
+        <section className={props.className} id={props.anchor}>
             <SectionText {...props}/>
             {props.items && (
                 <div className={props.className + '-items'}>
