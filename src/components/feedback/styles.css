@@ -1,0 +1,98 @@
+.feedback {
+    width: 50%;
+    margin-top: 80px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-form-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 860px;
+}
+
+.feedback-form-body input {
+    background: #273a71;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding-left: 25px;
+    font-family: SansSerif, monospace;
+    font-size: 18px;
+    color: white;
+}
+
+.feedback-form-body input::-webkit-input-placeholder {
+    font-size: 18px;
+    color: white;
+    font-family: SansSerif, monospace;
+}
+
+.feedback-form-body textarea::-webkit-input-placeholder {
+    font-size: 18px;
+    color: white;
+    font-family: SansSerif, monospace;
+}
+
+.feedback-form-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-form-header input {
+    height: 55px;
+    width: 410px;
+}
+
+.feedback-form-footer {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.feedback-form-footer textarea {
+    height: 200px;
+    width: 860px;
+    background: #273a71;
+    border: none;
+    border-radius: 3px;
+    padding-left: 25px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    font-family: SansSerif, monospace;
+    font-size: 18px;
+    color: white;
+}
+
+.feedback-form-body input:focus,
+.feedback-form-body input:active {
+    outline: none;
+}
+
+.feedback-form-body textarea:focus,
+.feedback-form-body textarea:active {
+    outline: none;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.error-label {
+    font-family: SansSerif, monospace;
+    text-align: left;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 5px;
+    color: white;
+    visibility: hidden;
+}
