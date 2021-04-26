@@ -1,7 +1,9 @@
 import React, {useState} from "react";
+import ReactDOM from "react-dom";
 import "./styles.css";
 import Button from "../button/Button";
 import axios from "axios";
+import Popup from "../popup/Popup";
 
 const Feedback = (props) => {
     const [name, setName] = useState("");
@@ -103,6 +105,10 @@ const Feedback = (props) => {
                 ).then((resp) => {
                     form.reset();
                     resetForm();
+                    ReactDOM.render(
+                        <Popup title={'Feedback form'} msg={'Thank you for submit feedback form'}
+                               className={'modal-feedback'}/>,
+                        document.querySelector('.modals'));
                 });
             }
         }

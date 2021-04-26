@@ -5,6 +5,7 @@ import Section from "./components/section/Section";
 import Footer from "./components/footer/Footer";
 import CustomLoader from "./components/custom-loader/CustomLoader";
 import OnTopButton from "./components/on-top-button/OnTopButton";
+import "./App.css";
 
 function App() {
     const [sections, setSections] = useState([]);
@@ -16,7 +17,7 @@ function App() {
             setSections(resp.data);
             setTimeout(() => {
                 setLoading(false);
-            }, 1500);
+            }, 1000);
         })
     }, []);
     if (!loading) {
@@ -28,6 +29,7 @@ function App() {
                 })}
                 <Footer/>
                 <OnTopButton/>
+                <div className={'modals'}></div>
             </>
         );
     } else {

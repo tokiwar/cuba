@@ -6,7 +6,7 @@ const OnTopButton = () => {
     useEffect(() => {
         window.addEventListener('scroll', function (e) {
             const scrollPos = window.scrollY;
-            if (scrollPos > 1000) {
+            if (scrollPos > 600) {
                 setShowButton('show');
             } else {
                 setShowButton('hide');
@@ -22,7 +22,7 @@ const OnTopButton = () => {
     }
     return (
         <button onClick={onTop} className={'on-top-button ' + showButton}>
-            <img src={"/upload/arrow.svg"}/>
+            <img src={"/upload/arrow.svg"} alt={""}/>
         </button>
     )
 }
