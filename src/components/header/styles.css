@@ -3,12 +3,16 @@
 }
 
 .head-line {
-    padding-top: 55px;
+    padding-top: 25px;
     padding-left: 240px;
     padding-right: 240px;
+    padding-bottom: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    width: -webkit-fill-available;
+    background: #87509c;
 }
 
 .head-body {

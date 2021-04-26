@@ -19,7 +19,7 @@ const HeaderMenu = () => {
     }
     useEffect(() => {
         axios.get(
-            'http://localhost:3004/menu'
+            'http://localhost:3004/menu-header'
         ).then((resp) => {
             setMenu(resp.data);
         })

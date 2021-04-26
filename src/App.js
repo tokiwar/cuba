@@ -17,7 +17,7 @@ function App() {
             setSections(resp.data);
             setTimeout(() => {
                 setLoading(false);
-            }, 1000);
+            }, 1500);
         })
     }, []);
     if (!loading) {

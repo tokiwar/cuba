@@ -4,12 +4,23 @@ import "./styles.css";
 
 const Popup = ({msg, title, className}) => {
     useEffect(() => {
+        openModal();
+        document.addEventListener("click", function (event) {
+            if (
+                event.target.matches(".button-close-modal") ||
+                !event.target.closest(".modal")
+            ) {
+                closeModal(event)
+            }
+        });
+    });
+    const openModal = () => {
         document.body.style.overflow = "hidden";
         let modals = document.querySelector('.modals');
         if (modals) {
             modals.classList.add('modals-background');
         }
-    });
+    }
     const closeModal = (event) => {
         event.preventDefault();
         const node = document.querySelector('.modals');
